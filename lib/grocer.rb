@@ -22,10 +22,13 @@ def consolidate_cart(cart)
   require 'pry'
   organized_cart 
   cart.each do |index|
-    index[:item]
+    name = index[:item]
     binding.pry
+    count = cart.find_all{|i| i[:item]==name}.length
+    binding.pry
+    organized_cart << index
   end
-
+binding.pry
 end
 
 
