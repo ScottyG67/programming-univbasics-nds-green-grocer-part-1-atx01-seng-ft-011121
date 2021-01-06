@@ -7,13 +7,13 @@ def find_item_by_name_in_collection(name, collection)
   #need to return full hash with :item==name and nill if no match
   require 'pry'
   item_hash={}
-  binding.pry
+  #binding.pry
   item_hash=collection.find do |index|
-    binding.pry
+    #binding.pry
     index[:item]==name
     #binding.pry
   end
-  binding.pry
+  #binding.pry
 
 end
 
