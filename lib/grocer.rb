@@ -19,7 +19,7 @@ def consolidate_cart(cart)
   
   #cart is AoH, each hash has 3 attributes, :item, :price, :clearance
   #need to return AoH, each hash has 4 attributes, :item,:price, :clearance (from cart) and :count which is the number of times this hash was in cart
-  require.pry
+  require 'pry'
   cart.each do |index|
     index[:item]
     binding.pry
