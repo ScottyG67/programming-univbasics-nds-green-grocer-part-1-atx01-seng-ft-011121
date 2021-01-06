@@ -22,7 +22,7 @@ def consolidate_cart(cart)
   require 'pry'
   organized_cart=[]
   count = 0
-  binding.pry
+  #binding.pry
   cart.each do |index|
     name = index[:item]
     #binding.pry
@@ -30,9 +30,9 @@ def consolidate_cart(cart)
     #binding.pry
     index[:count] = count
     organized_cart << index
-    binding.pry
+    #binding.pry
   end
-binding.pry
+#binding.pry
 end
 
 
