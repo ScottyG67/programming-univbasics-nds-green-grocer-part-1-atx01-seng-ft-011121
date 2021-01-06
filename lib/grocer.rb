@@ -24,7 +24,7 @@ def consolidate_cart(cart)
   count = 0
   cart.each do |index|
     name = index[:item]
-    #binding.pry
+    #use find_all to produce array with all hashes of desired item. lenght then converts array into integer of number of items.
     index[:count] = cart.find_all{|i| i[:item]==name}.length
     organized_cart << index
   end
