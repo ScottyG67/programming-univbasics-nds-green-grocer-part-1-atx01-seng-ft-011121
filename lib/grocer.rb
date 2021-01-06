@@ -5,9 +5,14 @@ def find_item_by_name_in_collection(name, collection)
   #collection is AoH, each hash has 3 attributes, :item, :price, :clearance
   #name is String and corrliates to :item in collection
   #need to return full hash with :item==name and nill if no match
-  
-  collection.each_with_object do |index|
-    if index[:item]==name
+  require 'pry'
+  item_hash={}
+  binding.pry
+  item_hash=collection.find do |index|
+    binding.pry
+    index[:item]==name
+    binding.pry
+  end
   
 
 end
