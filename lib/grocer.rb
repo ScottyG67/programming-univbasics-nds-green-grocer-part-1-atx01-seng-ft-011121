@@ -6,7 +6,8 @@ def find_item_by_name_in_collection(name, collection)
   #name is String and corrliates to :item in collection
   #need to return full hash with :item==name and nill if no match
   
-  collection.each_with_object |index| 
+  collection.each_with_object do |index|
+    if index[:item]==name
   
 
 end
