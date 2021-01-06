@@ -16,6 +16,10 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  
+  #cart is AoH, each hash has 3 attributes, :item, :price, :clearance
+  #need to return AoH, each hash has 4 attributes, :item,:price, :clearance (from cart) and :count which is the number of times this hash was in cart
+  
 
 end
 
