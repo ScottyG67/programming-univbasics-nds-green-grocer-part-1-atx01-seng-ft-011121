@@ -11,7 +11,7 @@ def find_item_by_name_in_collection(name, collection)
   item_hash=collection.find do |index|
     binding.pry
     index[:item]==name
-    binding.pry
+    #binding.pry
   end
   binding.pry
 
